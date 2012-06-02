@@ -1,6 +1,6 @@
 // Nathan Baker
-// Activity 3
-// VFW - Term 05/2012
+// Activity 1
+// MiU - Term 06/2012
 
 //Wait until the DOM is loaded.
 window.addEventListener("DOMContentLoaded", function () {

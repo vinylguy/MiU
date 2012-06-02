@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Nathan Baker, Project Week 2, Visual Frameworks, Term 5/2012-->
+<!--Nathan Baker, Project Week 1, MiU, Term 6/2012-->
 <html>
 	<head>
 		<!--Meta Tags-->
@@ -14,12 +14,30 @@
 	</head>
 	<body>
 		<header>
-		<!--My app name-->
-			<h1>Disc Golf Course Review</h1>
-		<!--Short description of what the app does-->
-		<p>This will allow you to make a basic review of different Disc Golf Courses that you visit.</p>
-		<!--Add Item Button-->
+			<div id="header" align="center">
+				<!--My app name-->
+				<img src="images/logo.png" border="2" style="border:2px solid black">
+				<!--Short description of what the app does-->
+				<p>Browse our Disc Golf course reviews or Add your own now!</p>
+			</div>
 		</header>
-		<a href="additem.html">Add Course Review</a>
+		<!--Search field with button-->
+		<div id="search" align="center">
+			<input type="text" id="search"/><input type="button" name="search" value="Search Reviews"/>
+		</div>
+		<br >
+		<!--Main CTA-->
+		<div id="feature" align="center">
+			<a href="additem.html"><img src="images/cta.png" border="2" style="border:2px solid black"></a>
+		</div>
+		<!--Browse Categories-->
+		<div id="browse" align="center">
+			<h2>Browse by Par:</h2>
+			<a href="#"><h3>Par 3</h3></a>
+			<a href="#"><h3>Par 4</h3></a>
+			<a href="#"><h3>Par 5</h3></a>
+			<a href="#"><h3>Unknown</h3></a>
+			<a href="#"><h3>Mixed</h3></a>
+		</div>
 	</body>
 </html>
