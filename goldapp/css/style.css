@@ -1,1 +1,10 @@
 // write your CSS in here
+
+#ticker {
+	height: 80px;
+	overflow: hidden;
+}
+
+#ticker li {
+	height: 80px;
+}
