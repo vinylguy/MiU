@@ -1,0 +1,329 @@
+<!doctype html>  
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nate's DiscGolf Review</title>
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>DiscGolf Review</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>Use this app to review disc golf courses, Review your own or read the reviews made by others.</p>
+			<a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Add a Review Now</a>
+			<h4>Recent Reviews</h4>
+			<ul id="ticker" data-role="listview" data-inset="true">
+				<li><img src="images/par3.png">RiverFront Park
+				<p>   </p>
+				<p>Some basic information about the review will go here.</p>
+				</li>
+				<li><img src="images/par4.png">Whistlers Bend
+				<p>   </p>
+				<p>Some basic information about the review will go here.</p>
+				</li>
+				<li><img src="images/par5.png">Weasel Ridge DGC
+				<p>   </p>
+				<p>Some basic information about the review will go here.</p>
+				</li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="favorites" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Personal Favorites</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>Thumbnail list will populate dynamically with favorite items from local storage.</p>
+			<p>Here on the gold app I utilized a 2x3 layout for my thumbnail grid.</p>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li><img src="images/par3.png">River Bend</img>
+						<p>Roseburg Oregon</p>
+						</li>
+						<li><img src="images/par4.png">Whistlers Bend</img>
+						<p>Roseburg Oregon</p>
+						</li>
+						<li><img src="images/par3.png">RiverForks Park</img>
+						<p>Roseburg Oregon</p>
+						</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li><img src="images/par5.png">Beaver Ridge</img>
+						<p>Portland Oregon</p>
+						</li>
+						<li><img src="images/par4.png">Scotts Mill</img>
+						<p>Beaverton Oregon</p>
+						</li>
+						<li><img src="images/par3.png">Newton Falls</img>
+						<p>Gorge Valley Oregon</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star" class="ui-btn-active">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="browse" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Browse Reviews</h1>
+		</div>
+	
+		<div data-role="content">
+			<p><h3>Browse Course Reviews by Par</h3></p>
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li><a href="#par3">
+				<h5>Par 3</h5>
+				<p>These courses were reviewed with a course par of 3.</p>
+				</a></li>
+				<li><a href="#par4">
+				<h5>Par 4</h5>
+				<p>These courses were rated with a course par of 4.</p>
+				</a></li>
+				<li><a href="#par5">
+				<h5>Par 5</h5>
+				<p>These courses were reviewed with a course par of 5.</p>
+				</a></li>
+				<li><a href="#mixed">
+				<h5>Mixed Par</h5>
+				<p>These courses have a mixed par set.</p>
+				</a></li>
+				<li><a href="#unknown">
+				<h5>Unknown Par</h5>
+				<p>These courses have no known par value.</p>
+				</a></li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="par3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Browse all Par 3</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>List generated by dynamically including par 3 from local storage.</p>
+			<ul data-role="listview" data-filter="true">
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="par4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Browse all Par 4</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>List generated by dynamically including par 4 from local storage.</p>
+			<ul data-role="listview" data-filter="true">
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="par5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Browse all Par 5</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>List generated by dynamically including par 5 from local storage.</p>
+			<ul data-role="listview" data-filter="true">
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="mixed" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Browse all mixed par</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>List generated by dynamically including mixed par from local storage.</p>
+			<ul data-role="listview" data-filter="true">
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="unknown" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Browse all Par unknown</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>List generated by dynamically including par unknown from local storage.</p>
+			<ul data-role="listview" data-filter="true">
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+				<li>Course Name</li>
+			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="additem.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- JavaScript under here -->
+	
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
