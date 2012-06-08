@@ -25,8 +25,10 @@
 			<h1>DiscGolf Review</h1>
 		</div>
 	
-		<div data-role="content">
+		<div data-role="content" align="center">
+			<p>Main Logo will go here</p>
 			<h5>Bronze App</h5>
+			<img src="images/lol.png">
 			<p>Use this app to review disc golf courses, Review your own or read the reviews made by others.</p>
 			<a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Add a Review Now</a>
 			<h4>Recent Reviews</h4>
@@ -40,6 +42,14 @@
 				<p>Some basic information about the review will go here.</p>
 				</li>
 				<li><img src="images/par5.png">Weasel Ridge DGC
+				<p>   </p>
+				<p>Some basic information about the review will go here.</p>
+				</li>
+				<li><img src="images/par3.png">Hermits Hideout
+				<p>   </p>
+				<p>Some basic information about the review will go here.</p>
+				</li>
+				<li><img src="images/par4.png">Baker Valley DGC
 				<p>   </p>
 				<p>Some basic information about the review will go here.</p>
 				</li>
@@ -67,34 +77,17 @@
 	
 		<div data-role="content">
 			<p>Thumbnail list will populate dynamically with favorite items from local storage.</p>
-			<p>Here on the gold app I utilized a 2x3 layout for my thumbnail grid.</p>
-			<div class="ui-grid-a">
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li><img src="images/par3.png">River Bend</img>
-						<p>Roseburg Oregon</p>
-						</li>
-						<li><img src="images/par4.png">Whistlers Bend</img>
-						<p>Roseburg Oregon</p>
-						</li>
-						<li><img src="images/par3.png">RiverForks Park</img>
-						<p>Roseburg Oregon</p>
-						</li>
-					</ul>
-				</div>
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li><img src="images/par5.png">Beaver Ridge</img>
-						<p>Portland Oregon</p>
-						</li>
-						<li><img src="images/par4.png">Scotts Mill</img>
-						<p>Beaverton Oregon</p>
-						</li>
-						<li><img src="images/par3.png">Newton Falls</img>
-						<p>Gorge Valley Oregon</p>
-						</li>
-					</ul>
-				</div>
+			<p>Here on the  bronze app I utilized a 3x3 layout for my thumbnail grid.</p>
+			<div class="ui-grid-b" align="center">
+				<div class="ui-block-a"><a href="#example"><img src="images/par3.png"></a></div>
+				<div class="ui-block-b"><a href="#example"><img src="images/par4.png"></a></div>
+				<div class="ui-block-c"><a href="#example"><img src="images/par5.png"></a></div>
+				<div class="ui-block-a"><a href="#example"><img src="images/par4.png"></a></div>
+				<div class="ui-block-b"><a href="#example"><img src="images/par5.png"></a></div>
+				<div class="ui-block-c"><a href="#example"><img src="images/par3.png"></a></div>
+				<div class="ui-block-a"><a href="#example"><img src="images/par5.png"></a></div>
+				<div class="ui-block-b"><a href="#example"><img src="images/par4.png"></a></div>
+				<div class="ui-block-c"><a href="#example"><img src="images/par3.png"></a></div>
 			</div>
 		</div>
 	
@@ -119,28 +112,74 @@
 	
 		<div data-role="content">
 			<p><h3>Browse Course Reviews by Par</h3></p>
-			<ul data-role="listview" data-inset="true" data-filter="true">
-				<li><a href="#par3">
-				<h5>Par 3</h5>
-				<p>These courses were reviewed with a course par of 3.</p>
-				</a></li>
-				<li><a href="#par4">
-				<h5>Par 4</h5>
-				<p>These courses were rated with a course par of 4.</p>
-				</a></li>
-				<li><a href="#par5">
-				<h5>Par 5</h5>
-				<p>These courses were reviewed with a course par of 5.</p>
-				</a></li>
-				<li><a href="#mixed">
-				<h5>Mixed Par</h5>
-				<p>These courses have a mixed par set.</p>
-				</a></li>
-				<li><a href="#unknown">
-				<h5>Unknown Par</h5>
-				<p>These courses have no known par value.</p>
-				</a></li>
-			</ul>
+			
+			<div data-role="collapsible-set">
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Par 3</h3>
+					<ul data-role="listview" data-filter="true">
+						<li><a href="#example"><p>Riverfront Park</p></a></li>
+						<li><a href="#example"><p>Whistlers Bend</p></a></li>
+						<li><a href="#example"><p>Dexter DGC</p></a></li>
+						<li><a href="#example"><p>Moreno Valley</p></a></li>
+						<li><a href="#example"><p>Menlo Park DGC</p></a></li>
+						<li><a href="#example"><p>Beachfront Park</p></a></li>
+						<li><a href="#example"><p>Holmes Lake</p></a></li>
+					</ul>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Par 4</h3>
+					<ul data-role="listview" data-filter="true">
+						<li><a href="#example"><p>Riverfront Park</p></a></li>
+						<li><a href="#example"><p>Whistlers Bend</p></a></li>
+						<li><a href="#example"><p>Dexter DGC</p></a></li>
+						<li><a href="#example"><p>Moreno Valley</p></a></li>
+						<li><a href="#example"><p>Menlo Park DGC</p></a></li>
+						<li><a href="#example"><p>Beachfront Park</p></a></li>
+						<li><a href="#example"><p>Holmes Lake</p></a></li>
+					</ul>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Par 5</h3>
+					<ul data-role="listview" data-filter="true">
+						<li><a href="#example"><p>Riverfront Park</p></a></li>
+						<li><a href="#example"><p>Whistlers Bend</p></a></li>
+						<li><a href="#example"><p>Dexter DGC</p></a></li>
+						<li><a href="#example"><p>Moreno Valley</p></a></li>
+						<li><a href="#example"><p>Menlo Park DGC</p></a></li>
+						<li><a href="#example"><p>Beachfront Park</p></a></li>
+						<li><a href="#example"><p>Holmes Lake</p></a></li>
+					</ul>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Mixed</h3>
+					<ul data-role="listview" data-filter="true">
+						<li><a href="#example"><p>Riverfront Park</p></a></li>
+						<li><a href="#example"><p>Whistlers Bend</p></a></li>
+						<li><a href="#example"><p>Dexter DGC</p></a></li>
+						<li><a href="#example"><p>Moreno Valley</p></a></li>
+						<li><a href="#example"><p>Menlo Park DGC</p></a></li>
+						<li><a href="#example"><p>Beachfront Park</p></a></li>
+						<li><a href="#example"><p>Holmes Lake</p></a></li>
+					</ul>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Unknown</h3>
+					<ul data-role="listview" data-filter="true">
+						<li><a href="#example"><p>Riverfront Park</p></a></li>
+						<li><a href="#example"><p>Whistlers Bend</p></a></li>
+						<li><a href="#example"><p>Dexter DGC</p></a></li>
+						<li><a href="#example"><p>Moreno Valley</p></a></li>
+						<li><a href="#example"><p>Menlo Park DGC</p></a></li>
+						<li><a href="#example"><p>Beachfront Park</p></a></li>
+						<li><a href="#example"><p>Holmes Lake</p></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	
 		<div data-role="footer" data-position="fixed" data-id="nav">
@@ -156,6 +195,7 @@
 		</div>
 	</div>
 	
+	<!--unused in bronze-->
 	<div data-role="page" id="par3" data-add-back-btn="true">
 	
 		<div data-role="header" data-position="fixed">
@@ -306,6 +346,30 @@
 				<li>Course Name</li>
 				<li>Course Name</li>
 			</ul>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
+					<li><a href="additem.html" data-icon="check">Review</a></li>
+					<li><a href="http://vinylguy.github.com/MiU/goldapp/index.html" data-icon="info">Gold</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="example" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Example Course Page</h1>
+		</div>
+	
+		<div data-role="content">
+			<p>This page is not finished, but in the final version will populate the reviews for the selected course.</p>
+			<p>Content will be created dynamically here.</p>
 		</div>
 	
 		<div data-role="footer" data-position="fixed" data-id="nav">
