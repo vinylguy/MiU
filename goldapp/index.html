@@ -73,7 +73,7 @@
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -125,7 +125,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star" class="ui-btn-active">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -170,7 +170,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -206,7 +206,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -242,7 +242,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -278,7 +278,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -314,7 +314,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -350,7 +350,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -374,7 +374,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorites" data-icon="star">Favorites</a></li>
 					<li><a href="#browse" data-icon="grid" class="ui-btn-active">Browse</a></li>
-					<li><a href="#reviewcourse" data-icon="check">Review</a></li>
+					<li><a href="#reviewcourse" data-icon="plus">Review</a></li>
 					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
 				</ul>
 			</div>
@@ -388,6 +388,7 @@
 		</div>
 	
 		<div data-role="content">
+			<p>Please fill out as much information as you can for a complete review.</p>
 			<p>* Fields are required.</p>
 			<form action="" method="post" id="reviewcourseform">
 				
@@ -397,8 +398,44 @@
 				</div>
 				
 				<div data-role="fieldcontain">
+					<label for="courselocation">* Course Location:</label>
+					<input type="text" name="courselocation" id="courselocation" class="required" placeholder="City / State"/>
+				</div>
+				
+				<div data-role="fieldcontain">
 					<label for="yourname">* Your Name:</label>
-					<input type="text" name="yourname" id="yourname" />
+					<input type="text" name="yourname" id="yourname" class="required" placeholder="John Doe"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="reviewdate">* Review Date:</label>
+					<input type="date" name="reviewdate" id="reviewdate" value="06/12/2012"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" data-mini="true">
+						<legend>* Select Target Type:</legend>
+						<input type="radio" value="baskets" name="targets" id="baskets" class="required">
+						<label for="baskets">Baskets</label>
+						<input type="radio" value="tones" name="targets" id="tones">
+						<label for="tones">Tone Poles</label>
+						<input type="radio" value="objects" name="targets" id="objects">
+						<label for="objects">Objects</label>
+						<input type="radio" value="mixed" name="targets" id="mixed">
+						<label for="mixed">Mixed Targets</label>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" data-mini="true">
+						<legend>Course Amenities:</legend>
+						<input type="checkbox" value="parking" checked="checked" name="amenities" id="parking">
+						<label for="parking">Parking</label>
+						<input type="checkbox" value="restrooms" name="amenities" id="restrooms">
+						<label for="restrooms">Restrooms</label>
+						<input type="checkbox" value="handicap" name="amenities" id="handicap">
+						<label for="handicap">Handicap Accessible</label>
+						<input type="checkbox" value="camping" name="amenities" id="camping">
+						<label for="camping">Camping</label>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -424,9 +461,9 @@
 					<select name="selectpar" id="selectpar" data-native-menu="false">
 						<option data-placeholder="true" value>Please Select Par</option>
 						<optgroup label="Known Par">
-							<option value="par3">Course scored on a Par 3</option>
-							<option value="par4">Course scored on a Par 4</option>
-							<option value="par5">Course scored on a Par 5</option>
+							<option value="par3">Course scored as Par 3</option>
+							<option value="par4">Course scored as Par 4</option>
+							<option value="par5">Course scored as Par 5</option>
 							<option value="mixed">Course scored with a mix of par's</option>
 						<optgroup label="UnKnown Par">
 							<option value="unknown">Par is Unknown</option>	
@@ -438,6 +475,18 @@
 				</div>
 				
 			</form>
+			
+			<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorites" data-icon="star">Favorites</a></li>
+					<li><a href="#browse" data-icon="grid" >Browse</a></li>
+					<li><a href="#reviewcourse" data-icon="plus" class="ui-btn-active">Review</a></li>
+					<li><a href="http://vinylguy.github.com/MiU/bronzeapp/index.html" data-icon="info">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
 			
 		</div>
 	
