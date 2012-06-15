@@ -1,11 +1,5 @@
 // write your javascript in here
 
-//News ticker code here
-/*function tick(){
-	$("#ticker li:first").slideUp( function (){ $(this).appendTo($("#ticker")).slideDown();});
-}
-setInterval(function(){tick ()}, 8000);*/
-
 function ge(x) {
 		var theElement = document.getElementById(x);
 		return theElement;
@@ -195,7 +189,7 @@ function ge(x) {
 				}
 			}
 			if(item.favorite[1] == "Yes"){
-				$("favorite").setAttribute("checked", "checked");
+				ge("favorite").setAttribute("checked", "checked");
 			}
 		ge("courseRating").value = item.courseRating[1];
 		ge("comments").value = item.comments[1];
@@ -204,7 +198,7 @@ function ge(x) {
 		save.removeEventListener("click", storeData);
 		//change submit button value to say edit
 		ge("submit").value = "Edit Review";
-		var editSubmit = $("submit");
+		var editSubmit = ge("submit");
 		//save the key value of the editSubmit event
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;

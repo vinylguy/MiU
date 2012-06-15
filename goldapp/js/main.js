@@ -17,7 +17,7 @@ $(document).ready(function(){
 //Validator Functions
 $(document).ready(function(){
 
-	var rcform = $('#reviewcourseform');
+	var rcform = $('#courseReview');
 	
 	rcform.validate({
 		invalidHandler: function(form, validator){},
