@@ -106,16 +106,16 @@ window.addEventListener("DOMContentLoaded", function () {
 		getSelectedRadio();
 		getCheckBoxValue();
 		var item 				= {};
-			item.select	 		= ["Par:", $("par").value];
-			item.cname 			= ["Course Name:", $("cname").value];
-			item.location		= ["Location:", $("location").value];
-			item.totalholes 	= ["Total Holes:", $("totalholes").value];
-			item.rname			= ["Reviewer Name:", $("rname").value];
-			item.reviewdate		= ["Review Date:", $("reviewdate").value];
+			item.select	 		= ["Par:", ge("par").value];
+			item.cname 			= ["Course Name:", ge("cname").value];
+			item.location		= ["Location:", ge("location").value];
+			item.totalholes 	= ["Total Holes:", ge("totalholes").value];
+			item.rname			= ["Reviewer Name:", ge("rname").value];
+			item.reviewdate		= ["Review Date:", ge("reviewdate").value];
 			item.targets 		= ["Target Type:", targetsValue];
 			item.favorite		= ["Is a Favorite:", favoriteValue];
-			item.courseRating 	= ["Course Rating:", $("courseRating").value];
-			item.comments		= ["Comments:", $("comments").value];
+			item.courseRating 	= ["Course Rating:", ge("courseRating").value];
+			item.comments		= ["Comments:", ge("comments").value];
 		//Save data into local storage.
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Review Submitted");
@@ -159,7 +159,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		var imageLi = document.createElement("li");
 		makeSubList.appendChild(imageLi);
 		var newImage = document.createElement("img");
-		var setSrc = newImage.setAttribute("src", "images/"+ parName + ".png");
+		var setSrc = newImage.setAttribute("src", "images/"+ parName + ".jpg");
 		imageLi.appendChild(newImage);
 	}
 	
@@ -328,16 +328,18 @@ window.addEventListener("DOMContentLoaded", function () {
 		favoriteValue = "No"
 		errMsg = ge("errors");
 	;
-		
-	makePar();
-
+	
+	//make par call from vfw	
+	/*makePar();*/
+	
+	
 	//Set link and Submit click events
 	var displayLink = ge("displayLink");
 	displayLink.addEventListener("click", getData);
 	var clearLink = ge("clearLink");
 	clearLink.addEventListener("click", clearLocal);
-	var save = ge("submit");
-	save.addEventListener("click", validate);
+	/*var save = ge("submit");
+	save.addEventListener("click", parseReviewForm);*/
 
 
 });

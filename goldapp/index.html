@@ -388,7 +388,7 @@
 		</div>
 	
 		<div data-role="content">
-			<a href="#" id="clearLink"> Clear Data </a><a href="#" id="displayLink"> Display Data </a><a href="additem.html" id="addNew" style="display:none;">Add New Review</a>
+			<a href="#" id="clearLink"> Clear Data </a><a href="#" id="displayLink" data-ajax="false"> Display Data </a><a href="additem.html" id="addNew" style="display:none;">Add New Review</a>
 			<p>Please fill out as much information as you can for a complete review.</p>
 			<p>* Fields are required.</p>
 			<form action="" method="post" id="courseReview">
@@ -443,6 +443,11 @@
 					<label for="courseRating">Course Rating</label>
 					<input type="range" name="courseRating" id="courseRating" value="5" min="0" max="10"/>
 				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="totalholes">Total Amount of Holes:</label>
+					<input type="text" name="totalholes" id="totalholes" placeholder="18"/>
+				</div>
 			
 				<div data-role="fieldcontain">
 					<label for="comments">Comments:</label>
@@ -471,7 +476,7 @@
 				</div>
 				
 				<div data-role="fieldcontain">
-					<input type="submit" value="Submit Review" id="submit" data-theme="b" />
+					<input type="submit" value="Submit Review" id="submit" data-theme="b" data-ajax="false"/>
 					<input type="reset" value="Reset" data-theme="a" />
 				</div>
 				
