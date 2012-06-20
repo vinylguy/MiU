@@ -11,7 +11,8 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="http://dev.jtsage.com/cdn/latest/jqm-datebox.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -409,7 +410,7 @@
 				
 				<div data-role="fieldcontain">
 					<label for="reviewdate">Review Date:</label>
-					<input type="date" name="reviewdate" id="reviewdate" data-role="datebox" placeholder="2012-14-06"/>
+					<input type="date" name="reviewdate" id="reviewdate" data-role="datebox" data-options='{"mode": "calbox"}' default value="06/14/2012" class="required date"/>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -494,9 +495,12 @@
 	
 	<!-- JavaScript under here -->
 	
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
 <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
 <script type="text/javascript" src="js/json.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
