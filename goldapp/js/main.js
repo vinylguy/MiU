@@ -5,15 +5,6 @@ var parseReviewForm = function(data){
 	console.log(data);
 };
 
-//Clear Textbox on focus
-/*
-$(document).ready(function(){
-	$('#reviewdate').focus(function(){
-		$(this).val('');	
-	});
-});
-*/
-
 //Validator Functions
 $(document).bind("pageinit", function(){
 	var rcform = $('#courseReview');
@@ -25,7 +16,6 @@ $(document).bind("pageinit", function(){
 			localStorage.setItem("formdata", data);
 		}
 	});
-
 });
 
 //Below is Original VFW Code, Trying to re-factor to work with new form. 
@@ -167,7 +157,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	function makeItemLinks(key, linksLi) {
 		//add Edit item link
 		var editLink = document.createElement("a");
-		editLink.href = "#";
+		editLink.href = "#courseReview";
 		editLink.key = key;
 		var editText = "Edit Review";
 		editLink.addEventListener("click", editItem);
