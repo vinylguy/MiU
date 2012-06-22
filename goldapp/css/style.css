@@ -32,6 +32,16 @@ background-repeat:no-repeat;
 background-size:100% 100%;
 }
 
+#displaydata{
+background:none;
+}
+
+#displaydata.logo{
+position:absolute;
+top:0px;
+left:0px;
+}
+
 #logo{
 }
 
