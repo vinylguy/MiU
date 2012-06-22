@@ -20,45 +20,56 @@
 </head>
 <body>
 
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-theme="c">
 	
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="c">
 			<h1>DiscGolf Review</h1>
 		</div>
 	
+		<div data-role="content" align="right" id="logo">
+		<img id="logo" src="images/logo.png">
+		</div>
+	
 		<div data-role="content" align="center">
-			<p>Main Logo will go here</p>
-			<h5>Bronze App</h5>
-			<img src="images/lol.png">
+			<img id="cta" src="images/lol.png">
 			<p>Use this app to review disc golf courses, Review your own or read the reviews made by others.</p>
 			<a href="additem.html" data-role="button" data-icon="plus" data-iconpos="right" data-ajax="false">Add a Review Now</a>
 			<h4>Recent Reviews</h4>
 			<ul id="ticker" data-role="listview" data-inset="true">
-				<li><img src="images/par3.jpg" class="ui-li-thumb">RiverFront Park
+				<li><img src="images/par3.jpg">RiverFront Park
 				<p></br></p>
-				<p>Review by: Nate</p>
-				<p>Reviewed on: 6-5-2012</p>
+				<p>Reviewed by: Nate Baker</p>
+				<p>Reviewed on: 6-12-2012</p>
+				<p><a href="#example">Read More</a></p>
 				</li>
 				<li><img src="images/par4.jpg">Whistlers Bend
 				<p></br></p>
-				<p>Some basic information about the review will go here.</p>
+				<p>Reviewed by: Joe Dimagio</p>
+				<p>Reviewed on: 3-12-2012</p>
+				<p><a href="#example">Read More</a></p>
 				</li>
 				<li><img src="images/par5.jpg">Weasel Ridge DGC
 				<p></br></p>
-				<p>Some basic information about the review will go here.</p>
+				<p>Reviewed by: Luke Reardon</p>
+				<p>Reviewed on: 10-12-2011</p>
+				<p><a href="#example">Read More</a></p>
 				</li>
-				<li><img src="images/par3.jpg">Hermits Hideout
+				<li><img src="images/par3.jpg">Small Valley DGC
 				<p></br></p>
-				<p>Some basic information about the review will go here.</p>
+				<p>Reviewed by: Nate Baker</p>
+				<p>Reviewed on: 4-28-2011</p>
+				<p><a href="#example">Read More</a></p>
 				</li>
-				<li><img src="images/par4.jpg">Baker Valley DGC
+				<li><img src="images/par4.jpg">Dexter Lake DGC
 				<p></br></p>
-				<p>Some basic information about the review will go here.</p>
+				<p>Reviewed by: Jeff Bridges</p>
+				<p>Reviewed on: 1-22-2010</p>
+				<p><a href="#example">Read More</a></p>
 				</li>
 			</ul>
 		</div>
 	
-		<div data-role="footer" data-position="fixed" data-id="nav">
+		<div data-role="footer" data-position="fixed" data-id="nav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
@@ -71,15 +82,18 @@
 		</div>
 	</div>
 	
-	<div data-role="page" id="favorites" data-add-back-btn="true">
+	<div data-role="page" id="favorites" data-add-back-btn="true" data-theme="c">
 	
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="c">
 			<h1>Personal Favorites</h1>
+		</div>
+		
+		<div data-role="content" align="right" id="logo">
+		<img id="logo" src="images/logo.png">
 		</div>
 	
 		<div data-role="content">
-			<p>Thumbnail list will populate dynamically with favorite items from local storage.</p>
-			<p>Here on the  bronze app I utilized a 3x3 layout for my thumbnail grid.</p>
+			<p>Browse courses using the thumbnails.</p>
 			<div class="ui-grid-b" align="center">
 				<div class="ui-block-a"><a href="#example"><img src="images/par3.jpg"></a></div>
 				<div class="ui-block-b"><a href="#example"><img src="images/par4.jpg"></a></div>
@@ -93,7 +107,7 @@
 			</div>
 		</div>
 	
-		<div data-role="footer" data-position="fixed" data-id="nav">
+		<div data-role="footer" data-position="fixed" data-id="nav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
@@ -106,14 +120,19 @@
 		</div>
 	</div>
 
-	<div data-role="page" id="browse" data-add-back-btn="true">
+	<div data-role="page" id="browse" data-add-back-btn="true" data-theme="c">
 	
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="c">
 			<h1>Browse Reviews</h1>
+		</div>
+	
+		<div data-role="content" align="right" id="logo">
+			<img id="logo" src="images/logo.png">
 		</div>
 	
 		<div data-role="content">
 			<p><h3>Browse Course Reviews by Par</h3></p>
+			
 			
 			<div data-role="collapsible-set">
 			
@@ -184,7 +203,7 @@
 			</div>
 		</div>
 	
-		<div data-role="footer" data-position="fixed" data-id="nav">
+		<div data-role="footer" data-position="fixed" data-id="nav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
@@ -390,7 +409,7 @@
 	
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 </html>
