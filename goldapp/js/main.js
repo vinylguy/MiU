@@ -124,7 +124,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		//Save data into local storage.
 		localStorage.setItem(id, JSON.stringify(item));
 		alert(ge("cname").value + " course review has been submitted.");
-		window.location="#reviewCourse"
+		window.location="#reviewcourse"
 		window.location.reload();
 	};
 	
@@ -174,7 +174,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	function makeItemLinks(key, linksLi) {
 		//add Edit item link
 		var editLink = document.createElement("a");
-		editLink.href = "#courseReview";
+		editLink.href = "#reviewcourse";
 		editLink.key = key;
 		var editText = "Edit Review";
 		editLink.addEventListener("click", editItem);
