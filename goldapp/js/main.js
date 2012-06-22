@@ -1,4 +1,6 @@
-// write your javascript in here
+//Nathan Baker
+//MiU term 06/2012
+//Project 4 gold app JS file
 
 //saving form data w/ console preview
 var parseReviewForm = function(data){
@@ -13,10 +15,23 @@ $(document).bind("pageinit", function(){
 		//Save to Local Storage
 		submitHandler: function(){
 			var data = rcform.serializeArray();
-			localStorage.setItem("formdata", data);
+			//localStorage.setItem("formdata", data);
+			storeData(data);
 		}
 	});
 });
+
+//Validator Functions edited
+/*$(document).bind("pageinit", function(){
+	var rcform = $('#courseReview');
+	rcform.validate({
+		invalidHandler: function(form, validator){},
+		//Save to Local Storage
+		submitHandler: function(){
+			storeData();
+		}
+	});
+});*/
 
 //Below is Original VFW Code, Trying to re-factor to work with new form. 
 
@@ -85,13 +100,13 @@ window.addEventListener("DOMContentLoaded", function () {
 	}
 	
 	//Store Data
-	function storeData(key){
-		if(!key){
-			var id 					= Math.floor(Math.random()*10000001);
+	function storeData(){
+		if(ge("submit").value){
+			var y = localStorage.length;
+			var id = Math.floor(Math.random()*10000001);
 		}else{
-			id = key;
-		}
-
+			var id = ge("submit").key;
+		};
 		//Pull form field values and store inside an object.
 		getSelectedRadio();
 		getCheckBoxValue();
@@ -108,7 +123,9 @@ window.addEventListener("DOMContentLoaded", function () {
 			item.comments		= ["Comments:", ge("comments").value];
 		//Save data into local storage.
 		localStorage.setItem(id, JSON.stringify(item));
-		alert("Review Submitted");
+		alert(ge("cname").value + " course review has been submitted.");
+		window.location="#reviewCourse"
+		window.location.reload();
 	};
 	
 	function getData(){
@@ -164,9 +181,6 @@ window.addEventListener("DOMContentLoaded", function () {
 		editLink.innerHTML = editText;
 		linksLi.appendChild(editLink);
 		
-		var breakTag = document.createElement("br");
-		linksLi.appendChild(breakTag);
-		
 		//add delete item link
 		var deleteLink = document.createElement("a");
 		deleteLink.href = "#";
@@ -193,7 +207,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		//Show form
 		toggleControls("off");
 		
-		ge("par").value = item.select[1];
+		ge("select").value = item.select[1];
 		ge("cname").value = item.cname[1];
 		ge("location").value = item.location[1];
 		ge("totalholes").value = item.totalholes[1];
@@ -218,12 +232,12 @@ window.addEventListener("DOMContentLoaded", function () {
 		ge("comments").value = item.comments[1];
 		
 		//remove initial listener from save contact button
-		save.removeEventListener("click", storeData);
+		//save.removeEventListener("click", storeData);
 		//change submit button value to say edit
 		ge("submit").value = "Edit Review";
 		var editSubmit = ge("submit");
 		//save the key value of the editSubmit event
-		editSubmit.addEventListener("click", validate);
+		//editSubmit.addEventListener("click", validator);
 		editSubmit.key = this.key;
 	};
 	
